@@ -135,6 +135,7 @@ Conflicts resolution policy:
     6. any row_plist_part #include should override any of the same properties included using link_to_#def_block or relative_path_to_plist_file `#include`  
     7. conflicts between several link_to_#def_block or relative_path_to_plist_file `#include` within the same target shouldn't be resolved automatically.  
 
+
 8. generate plist for each #target block
 
 9. Modify build config of targets (only those that are specified in plc) so that all specified targets point to generated plists  
