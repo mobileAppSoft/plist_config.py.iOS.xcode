@@ -22,6 +22,9 @@ The spec should provide the extensive overview of utility behavior and certain i
     
     #10 is Implementation Plan. Refer to it to go on with the work.  
 
+### Important NOTE
+    !!! GitHub markdown formatting isn't preserve the original structure, please see the source of this file.  
+
     MAX id: 24  
 
 
@@ -133,6 +136,7 @@ The spec should provide the extensive overview of utility behavior and certain i
 
 Conflicts resolution policy:  
     6. any row_plist_part #include should override any of the same properties included using link_to_#def_block or relative_path_to_plist_file `#include`  
+
     7. conflicts between several link_to_#def_block or relative_path_to_plist_file `#include` within the same target shouldn't be resolved automatically.  
 
 
@@ -146,9 +150,9 @@ Conflicts resolution policy:
 
     Then I would start with the following:  
     12. implement the script (cli app) that  
+
         * can be run as `<absolute_path_to_script>/plc init`
 
-        
         * should be run while `pwd` == directory with at least one `.xcodeproj`  
             * report error if no `.xcodeproj` found  
             * report error if more than one `.xcodeproj` found in the same dir  
@@ -170,8 +174,6 @@ Conflicts resolution policy:
 
             // and so on for all the targets that already exist in .xcodeproj  
             ```  
-
-
 
 13. On each run of `plc init` generate default (if it does not exist already) `.plcconfig` in <user_home_dir> with the following content  
     ```
