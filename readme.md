@@ -75,7 +75,8 @@ MAX id: 24
     `#` is a part of the keyword and is used as a keyword_marker that can be seen easily while using any text editor regardless of having any highlighting features within the editor.  
 
 \16. plc file content syntax:  
-    ```
+    ```  
+
     // this is example of a comment  
 
     // `(_ : 1)` means `_` have to be present exactly one time  
@@ -156,7 +157,8 @@ Conflicts resolution policy:
             * report error if more than one `.xcodeproj` found in the same dir  
         
         * creates `plist_config.plc` file with the following content:  
-            ```
+            ```  
+            
             #target <target1>
                 #include original <target1> plist
 
@@ -174,7 +176,8 @@ Conflicts resolution policy:
             ```  
 
 \13. On each run of `plc init` generate default (if it does not exist already) `.plcconfig` in <user_home_dir> with the following content  
-    ```
+    ```  
+
     #header  
         #include  
             <?xml version="1.0" encoding="UTF-8"?>
