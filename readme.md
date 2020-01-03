@@ -22,12 +22,15 @@ The spec should provide the extensive overview of utility behavior and certain i
     
 \#10 is Implementation Plan. Refer to it to go on with the work.  
 
+### Important NOTE
+> GitHub markdown formatting may not preserve the original structure, please see the source of this file.
+
 MAX id: 24  
 
 ---
 
 \4. CLI command name:  
-    `plc` – stays for "PList Config"
+    `plc` – stays for "**PL**ist **C**onfig"
 
 \15. `.plc` – plist_config file extension  
 
@@ -37,9 +40,9 @@ MAX id: 24
     * version  
     * help  
 
-\5. Plist config_file example
-    ```
+\5. Plist config_file example  
     
+    ```  
     #target ProjectTarget1
         #include common plist part
 
@@ -75,8 +78,8 @@ MAX id: 24
     `#` is a part of the keyword and is used as a keyword_marker that can be seen easily while using any text editor regardless of having any highlighting features within the editor.  
 
 \16. plc file content syntax:  
+    
     ```  
-
     // this is example of a comment  
 
     // `(_ : 1)` means `_` have to be present exactly one time  
@@ -157,8 +160,8 @@ Conflicts resolution policy:
             * report error if more than one `.xcodeproj` found in the same dir  
         
         * creates `plist_config.plc` file with the following content:  
-            ```  
             
+            ```  
             #target <target1>
                 #include original <target1> plist
 
@@ -176,8 +179,8 @@ Conflicts resolution policy:
             ```  
 
 \13. On each run of `plc init` generate default (if it does not exist already) `.plcconfig` in <user_home_dir> with the following content  
+    
     ```  
-
     #header  
         #include  
             <?xml version="1.0" encoding="UTF-8"?>
